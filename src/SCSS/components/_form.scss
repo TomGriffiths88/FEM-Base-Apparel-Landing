@@ -1,0 +1,75 @@
+.form {
+  width: 100%;
+  position: relative;
+
+  &__input,
+  &__submit {
+    font-family: inherit;
+    color: $color-primary-desat;
+  }
+
+  &__input {
+    border: 1px solid rgba($color-grey, 0.2);
+    height: 50px;
+    border-radius: 30px;
+    width: 100%;
+    padding: 0 25px;
+    background-color: transparent;
+    outline: none;
+
+    &--invalid {
+      border: 2px solid $color-primary !important;
+      background-image: url('../../../images/icon-error.svg');
+      background-repeat: no-repeat;
+      background-position: 79% 10px;
+
+      @media (max-width: 490px) {
+        background-position: 70% 10px;
+      }
+    }
+
+    &:focus {
+      border: 2px solid $color-grey;
+    }
+
+    &::placeholder {
+      color: $color-primary-desat;
+      opacity: 0.5;
+    }
+  }
+
+  &__submit {
+    height: 50px;
+    width: 75px;
+    position: absolute;
+    right: 0;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 1rem 2rem rgba($color-primary-desat, 0.5);
+    background: url('../../../images/icon-arrow.svg'),
+      linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)),
+      $color-primary-desat;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease;
+
+    &:focus,
+    &:hover {
+      background: url('../../../images/icon-arrow.svg'), hsl(0, 80%, 86%);
+      background-repeat: no-repeat;
+      background-position: center;
+      outline: none;
+    }
+  }
+
+  &__feedback {
+    margin-left: 1.5rem;
+    margin-top: 0.7rem;
+    color: $color-primary-desat;
+    @media (max-width: 490px) {
+      text-align: left;
+    }
+  }
+}

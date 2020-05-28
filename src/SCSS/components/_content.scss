@@ -1,0 +1,62 @@
+.content {
+  background-color: $color-light-pink;
+  height: 100%;
+
+  @media (min-width: 1000px) {
+    order: 1;
+    width: 55vw;
+    background: url('../../../images/bg-pattern-desktop.svg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.75rem;
+  }
+
+  &__box {
+    padding: 3.8rem 1.8rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 30.625rem;
+
+    @media (min-width: 1000px) {
+      text-align: left;
+      margin-bottom: auto;
+    }
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: $color-grey;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+
+    @media (min-width: 1000px) {
+      font-size: 4.2rem;
+    }
+
+    &--em {
+      font-weight: 300;
+      color: $color-primary-desat;
+      display: block;
+      margin-bottom: 0;
+      opacity: 0.85;
+    }
+  }
+
+  &__copy {
+    color: $color-primary-desat;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 2.2rem;
+    opacity: 0.85;
+
+    @media (min-width: 1000px) {
+      font-size: 1rem;
+    }
+  }
+}
