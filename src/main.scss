@@ -1,11 +1,16 @@
-@import './SCSS/base/base';
-@import './SCSS/abstracts/typography';
+//ABSTRACTS
 @import './SCSS/abstracts/variables';
+@import './SCSS/abstracts/typography';
 
+//BASE
+@import './SCSS/base/base';
+
+//LAYOUT
 @import './SCSS/layout/header';
 @import './SCSS/layout/layout';
 @import './SCSS/layout/footer';
 
+//COMPONENTS
 @import './SCSS/components/content';
 @import './SCSS/components/form';
 @import './SCSS/components/hero';

@@ -2,7 +2,7 @@
   background-color: $color-light-pink;
   height: 100%;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 62.5em) {
     order: 1;
     width: 55vw;
     background: url('../../../images/bg-pattern-desktop.svg');
@@ -20,7 +20,7 @@
     margin: 0 auto;
     max-width: 30.625rem;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 62.5em) {
       text-align: left;
       margin-bottom: auto;
     }
@@ -35,7 +35,7 @@
     line-height: 1.1;
     margin-bottom: 1rem;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 62.5em) {
       font-size: 4.2rem;
     }
 
@@ -55,7 +55,7 @@
     margin-bottom: 2.2rem;
     opacity: 0.85;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 62.5em) {
       font-size: 1rem;
     }
   }

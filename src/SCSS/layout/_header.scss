@@ -2,9 +2,9 @@
   padding: 1.5625rem;
   background-color: $color-white;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 62.5em) {
     background: transparent;
-    margin-bottom: 140px;
+    margin-bottom: 8.75rem;
     width: 100%;
     max-width: 30.625rem;
   }
@@ -13,7 +13,7 @@
     height: 1.2rem;
     width: auto;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 62.5em) {
       height: 2.5rem;
     }
   }
